@@ -1,0 +1,26 @@
+.footer-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container p {
+    display: flex;
+    float: inline-end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    color: #000;
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.footer-container p span {
+    color: rgb(67, 43, 226);
+    margin-left: 5px;
+}

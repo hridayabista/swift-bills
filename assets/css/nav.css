@@ -1,0 +1,220 @@
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+
+	--color-white: #ffffff;
+    --color-light: #f0eff5;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
+    --color-dark: #27282f;
+    --color-primary: rgb(71, 7, 234);
+	--color-primary-light:rgb(214, 198, 253);
+    --color-success: rgb(34, 202, 75);
+    --color-danger: rgb(255, 67, 54);
+    --color-warning: rgb(234, 181, 7);
+    --color-purple: rgb(160, 99, 245);
+}
+
+
+nav {
+	height: 56px;
+	background: var(--color-primary-light);
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	font-family: var(--lato);
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+
+
+nav::before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	bottom: -40px;
+	left: 0;
+	border-radius: 50%;
+	box-shadow: -20px -20px 0 var(--light);
+}
+
+nav i {
+	color: var(--color-dark);
+	padding: 20px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+
+
+nav .top-nav-items {
+    position: relative;
+    display: flex;
+    width: 60%;
+    top: 0.5rem;
+}
+
+nav .top-nav-items ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+nav .top-nav-items ul li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 40px;
+	width: 600px;
+	justify-content: center;
+}
+
+nav .top-nav-items ul li a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+
+nav .btn{
+    position: relative;
+    display: inline-block;
+    font-weight: 550;
+    text-transform: uppercase;
+    max-width: max-content;
+	padding: 0.3rem 1rem;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 7px;
+    font-size: 12px;
+    box-shadow: -10px -20px 70px 2px var(--color-gray-light);
+}
+  
+nav .btn::before{
+    content: "";
+    position: absolute;
+    bottom: 100%; left: 50%;
+    transform: translateX(-50%);
+    width: 200%; height: 200%;
+    border-radius: 50%;
+    background-color: #6161e8;
+    transition: 500ms ease;
+    z-index: -1;
+}
+  
+nav .btn .text{
+    transition: 250ms ease;
+}
+
+  
+  
+nav .btn .text-2{
+    position: absolute;
+    top: 100%; left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    color: #ffffff;
+}
+  
+nav .btn:is(:hover, :focus-visible)::before{
+    bottom: -50%;
+}
+
+nav .btn:is(:hover, :focus-visible) .text-1{
+    transform: translateY(-4rem);
+}
+
+nav .btn:is(:hover, :focus-visible) .text-2{
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+nav .banner {
+	width: 56px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s ease-out;
+    background: var(--color-primary-light);
+}
+
+nav .banner li {
+	list-style: none;
+    border: none;
+}
+
+nav button {
+	border: none;
+    outline: none;
+
+}
+
+nav .banner img {
+	height: 90px;
+	width: 90px;
+	cursor: pointer;
+	position: absolute;
+	top: -2rem;
+}
+
+nav .banner .open-cafe {
+	display: block;
+}
+
+
+nav .banner .close-cafe {
+	display: none;
+}
+
+
+
+
+.profile {
+	position: absolute;
+	right: 1rem;
+    display: flex; 
+    align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.profile-photo {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+/* Responsive nav */
+@media (max-width:)
